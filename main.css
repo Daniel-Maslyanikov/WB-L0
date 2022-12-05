@@ -1,0 +1,55 @@
+/* General settings */
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+	background-color: #6725a8;
+}
+
+/* .wrapper {
+
+	height: 100px;
+	background-color: #F6F6FA;
+} */
+
+/* HEADER */
+.header {
+	width: 112px;
+	display: flex;
+	align-items: center;
+	margin: 16px 0;
+}
+
+.header__left {
+	display: flex;
+}
+
+.header__center {
+}
+
+.header__right {
+	display: flex;
+}
+
+/* BURGER */
+.burger {
+	position: relative;
+	cursor: pointer;
+	width: 4.8rem;
+	height: 4.8rem;
+	border: 1px solid rgba(255, 255, 255, 0.45);
+	border-radius: 8px;
+}
+
+.burger img {
+	position: absolute;
+	left: 20%;
+	top: 50%;
+	transform: translate(0, -50%)
+}
