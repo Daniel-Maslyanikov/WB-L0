@@ -5,6 +5,8 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	color: white;
 }
 
 html {
@@ -20,14 +22,16 @@ html {
 
 /* HEADER */
 .header {
-	width: 112px;
+	height: 112px;
 	display: flex;
 	align-items: center;
-	margin: 16px 0;
+	justify-content: space-between;
 }
 
 .header__left {
 	display: flex;
+	align-items: center;
+	margin-left: 2.4rem;
 }
 
 .header__center {
@@ -35,6 +39,50 @@ html {
 
 .header__right {
 	display: flex;
+	align-items: center;
+	margin-right: 1.6rem;
+}
+
+.header__item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	width: 5.6rem;
+	height: 5.6rem;
+}
+.header__item img {
+	width: 2.2rem;
+}
+
+.header__item:first-child {
+	margin-right: 10px;
+}
+
+.header__search {
+	position: relative;
+	border-radius: 36px;
+	width: 59.4rem;
+	height: 4.8rem;
+	border: none;
+	outline: none;
+	padding: 0 20px;
+	background: rgba(255, 255, 255, 0.2);
+}
+
+.header__input {
+	width: 51.4rem;
+	height: 4.8rem;
+	border: none;
+	outline: none;
+	background-color: rgba(255, 255, 255, 0);
+}
+
+.header__search img {
+	position: absolute;
+	cursor: pointer;
+  top: 13px;
+  right: 30px;
 }
 
 /* BURGER */
@@ -45,11 +93,12 @@ html {
 	height: 4.8rem;
 	border: 1px solid rgba(255, 255, 255, 0.45);
 	border-radius: 8px;
+	margin-right: 1.6rem;
 }
 
 .burger img {
 	position: absolute;
 	left: 20%;
 	top: 50%;
-	transform: translate(0, -50%)
+	transform: translate(0, -50%);
 }
