@@ -60,9 +60,9 @@
                       <p>Размер: 56</p>
                     </div>
                     <div class="item__address">
-                      <p>Коледино WB</p>
+                      <p class="text--gray">Коледино WB</p>
                       <div class="item__comp">
-                        <p>ООО Вайлдберриз</p>
+                        <p class="text--gray">ООО Вайлдберриз</p>
                         <img src="./img/icon-i.svg" alt="i" />
                       </div>
                     </div>
@@ -103,9 +103,9 @@
                       <p>Цвет: прозрачный</p>
                     </div>
                     <div class="item__address">
-                      <p>Коледино WB</p>
+                      <p class="text--gray">Коледино WB</p>
                       <div class="item__comp">
-                        <p>ООО Мегапрофстиль</p>
+                        <p class="text--gray">ООО Мегапрофстиль</p>
                         <img src="./img/icon-i.svg" alt="i" />
                       </div>
                     </div>
@@ -143,9 +143,9 @@
                     </p>
 
                     <div class="item__address">
-                      <p>Коледино WB</p>
+                      <p class="text--gray">Коледино WB</p>
                       <div class="item__comp">
-                        <p>ООО Вайлдберриз</p>
+                        <p class="text--gray">ООО Вайлдберриз</p>
                         <img src="./img/icon-i.svg" alt="i" />
                       </div>
                     </div>
@@ -174,7 +174,7 @@
               </div>
             </div>
           </section>
-					<section class="section__in-stock section__out-of-stock">
+          <section class="section__in-stock section__out-of-stock">
             <div class="section__in-stock--header">
               <div class="in-stock__all">
                 <p class="text__out-of-stock">Отсутствуют · 3 товара</p>
@@ -186,7 +186,11 @@
             <div class="in-stock__products">
               <div class="product__item">
                 <div class="item__left">
-                  <img class="item__pic item__pic--out-of-stock" src="./img/t-shirt.png" alt="T-shirt" />
+                  <img
+                    class="item__pic item__pic--out-of-stock"
+                    src="./img/t-shirt.png"
+                    alt="T-shirt"
+                  />
                   <div class="item__info">
                     <p class="item__name item__name--out-of-stock">Футболка UZcotton мужская</p>
                     <div class="item__param item__param--out-of-stock">
@@ -204,13 +208,16 @@
                       </div>
                     </div>
                   </div>
-                  <div class="item__price">
-                  </div>
+                  <div class="item__price"></div>
                 </div>
               </div>
               <div class="product__item">
                 <div class="item__left">
-                  <img class="item__pic item__pic--out-of-stock" src="./img/phone.png" alt="phone" />
+                  <img
+                    class="item__pic item__pic--out-of-stock"
+                    src="./img/phone.png"
+                    alt="phone"
+                  />
                   <div class="item__info">
                     <p class="item__name item__name--out-of-stock">
                       Силиконовый чехол картхолдер (отверстия) для карт, прозрачный кейс бампер на
@@ -230,13 +237,16 @@
                       </div>
                     </div>
                   </div>
-                  <div class="item__price">
-                  </div>
+                  <div class="item__price"></div>
                 </div>
               </div>
               <div class="product__item">
                 <div class="item__left">
-                  <img class="item__pic item__pic--out-of-stock" src="./img/pencils.png" alt="pencils" />
+                  <img
+                    class="item__pic item__pic--out-of-stock"
+                    src="./img/pencils.png"
+                    alt="pencils"
+                  />
                   <div class="item__info">
                     <p class="item__name item__name--out-of-stock">
                       Карандаши цветные Faber-Castell "Замок", набор 24 цвета, заточенные,
@@ -253,46 +263,77 @@
                       </div>
                     </div>
                   </div>
-                  <div class="item__price">
-                  </div>
+                  <div class="item__price"></div>
                 </div>
               </div>
             </div>
           </section>
-					<section class="section__delivery">
-						<div>
-							<h3>Способ доставки</h3>
-							<a>Изменить</a>
+          <section class="section__delivery wrapper--white">
+            <div class="section__header">
+              <h3 class="text--heading">Способ доставки</h3>
+              <a class="text--change">Изменить</a>
+            </div>
+            <div class="delivery__info">
+              <div class="delivery__info--left">
+                <p class="text--primary">Пункт выдачи</p>
+                <p class="text--primary">Стоимость доставки</p>
+                <p class="text--primary">5—6 февраля</p>
+                <p class="text--primary">7—8 февраля</p>
+              </div>
+              <div class="delivery__info--right">
+                <div class="delivery__address">
+                  <p class="text--secondary">Бишкек, улица Ахматбека Суюмбаева, 12/1</p>
+                  <div class="delivery__rating">
+                    <img src="./img/star.svg" alt="star" width="11px" height="11px" />
+                    <p class="delivery__rate">4.99</p>
+                    <p>Ежедневно с 10 до 21</p>
+                  </div>
+                </div>
+                <div class="delivery__free">
+                  <p class="text--secondary">Бесплатно</p>
+                </div>
+                <div class="delivery__dates">
+                  <img class="delivery__img" src="./img/t-shirt.png" alt="t-shirt" />
+                  <img class="delivery__img" src="./img/phone.png" alt="phone" />
+                  <img class="delivery__img" src="./img/pencils.png" alt="pencils" />
+                </div>
+                <div class="delivery__dates">
+                  <img class="delivery__img" src="./img/phone.png" alt="phone" />
+                </div>
+              </div>
+            </div>
+            <div class="delivery__returns">
+              <img src="./img/approved.svg" alt="approved" />
+              <p>Обратная доставка товаров на склад при отказе — <span>бесплатно</span></p>
+            </div>
+          </section>
+					<section class="section__payments wrapper--white">
+						<div class="section__header">
+              <h3 class="text--heading">Способ оплаты</h3>
+              <a class="text--change">Изменить</a>
+            </div>
+						<div class="payments__card">
+							<img src="./img/mir.svg" alt="mir">
+							<p class="text--secondary">1234 56•• •••• 1234</p>
+							<p class="text--secondary">01/30</p>
 						</div>
-						<div class="delivery__info">
-							<div class="delivery__pickup-info">
-								<p class="delivery__text--primary">Пункт выдачи</p>
-							<div class="delivery__address">
-									<p class="delivery__text--secondary">Бишкек, улица Ахматбека Суюмбаева, 12/1</p>
-									<div class="delivery__rating">
-										<img src="./img/star.svg" alt="star">
-										<p>4.99</p>
-										<p>Ежедневно с 10 до 21 </p>
-									</div>
+						<p class="text--gray">Спишем оплату с карты при получении</p>
+					</section>
+					<section class="section__recipient wrapper--white">
+						<h3 class="recipient__heading text--heading">Получатель</h3>
+						<div class="recipient__input-wrapper">
+							<div class="recipient__top">
+								<input class="recipient__input" type="text" placeholder="Имя">
+								<input class="recipient__input" type="text" placeholder="Фамилия">
+							</div>
+							<div class="recipient__bottom">
+								<input class="recipient__input" type="text" placeholder="Почта">
+								<input class="recipient__input" type="text" placeholder="Телефон">
+								<div class="recipient__input--inn">
+									<input class="recipient__input" type="text" placeholder="ИНН">
+									<p>Для таможенного оформления</p>
 								</div>
 							</div>
-							<div class="delivery__cost">
-								<p class="delivery__text--primary">Стоимость доставки</p>
-								<p class="delivery__text--secondary">Бесплатно</p>
-							</div>
-							<div class="delivery__dates">
-								<p class="delivery__text--primary">5—6 февраля</p>
-								<img src="./img/t-shirt.png" alt="t-shirt">
-								<img src="./img/phone.png" alt="phone">
-								<img src="./img/pencils.png" alt="pencils">
-							</div>
-							<div class="delivery__dates">
-								<img src="./img/phone.png" alt="phone">
-							</div>
-						</div>
-						<div class="delivery__returns">
-							<img src="./img/approved.svg" alt="approved">
-							<p>Обратная доставка товаров на склад при отказе — <span>бесплатно</span></p>
 						</div>
 					</section>
         </section>
@@ -301,5 +342,8 @@
         </section>
       </main>
     </div>
+		<footer>
+			<p>© 2022  ООО «Товары и точка»</p>
+		</footer>
   </body>
 </html>
