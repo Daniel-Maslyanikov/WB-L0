@@ -307,43 +307,101 @@
               <p>Обратная доставка товаров на склад при отказе — <span>бесплатно</span></p>
             </div>
           </section>
-					<section class="section__payments wrapper--white">
-						<div class="section__header">
+          <section class="section__payments wrapper--white">
+            <div class="section__header">
               <h3 class="text--heading">Способ оплаты</h3>
               <a class="text--change">Изменить</a>
             </div>
-						<div class="payments__card">
-							<img src="./img/mir.svg" alt="mir">
-							<p class="text--secondary">1234 56•• •••• 1234</p>
-							<p class="text--secondary">01/30</p>
-						</div>
-						<p class="text--gray">Спишем оплату с карты при получении</p>
-					</section>
-					<section class="section__recipient wrapper--white">
-						<h3 class="recipient__heading text--heading">Получатель</h3>
-						<div class="recipient__input-wrapper">
-							<div class="recipient__top">
-								<input class="recipient__input" type="text" placeholder="Имя">
-								<input class="recipient__input" type="text" placeholder="Фамилия">
-							</div>
-							<div class="recipient__bottom">
-								<input class="recipient__input" type="text" placeholder="Почта">
-								<input class="recipient__input" type="text" placeholder="Телефон">
-								<div class="recipient__input--inn">
-									<input class="recipient__input" type="text" placeholder="ИНН">
-									<p>Для таможенного оформления</p>
-								</div>
-							</div>
-						</div>
-					</section>
+            <div class="payments__card">
+              <img src="./img/mir.svg" alt="mir" />
+              <p class="text--secondary">1234 56•• •••• 1234</p>
+              <p class="text--secondary">01/30</p>
+            </div>
+            <p class="text--gray">Спишем оплату с карты при получении</p>
+          </section>
+          <section class="section__recipient wrapper--white">
+            <h3 class="recipient__heading text--heading">Получатель</h3>
+            <div class="recipient__input-wrapper">
+              <div class="recipient__top">
+                <input class="recipient__input" type="text" placeholder="Имя" />
+                <input class="recipient__input" type="text" placeholder="Фамилия" />
+              </div>
+              <div class="recipient__bottom">
+                <input class="recipient__input" type="text" placeholder="Почта" />
+                <input class="recipient__input" type="text" placeholder="Телефон" />
+                <div class="recipient__input--inn">
+                  <input class="recipient__input" type="text" placeholder="ИНН" />
+                  <p>Для таможенного оформления</p>
+                </div>
+              </div>
+            </div>
+          </section>
         </section>
-        <section class="section__total">
-          <div class="placeholder"></div>
+        <section class="section__total wrapper--white">
+          <div class="total__price">
+            <div class="price__str">
+              <h3 class="text--heading">Итого</h3>
+              <h3 class="text--heading right-side">2 101 063 сом</h3>
+            </div>
+            <div class="price__str">
+              <p class="text--secondary">4 товара</p>
+              <p class="text--secondary right-side">2 302 048 сом</p>
+            </div>
+            <div class="price__str">
+              <p class="text--secondary">Скидка</p>
+              <p class="text--secondary right-side">-200 985 сом</p>
+            </div>
+            <div class="price__str">
+              <p class="text--secondary">Доставка</p>
+              <p class="text--secondary right-side">Бесплатно</p>
+            </div>
+          </div>
+          <div class="total__delivery">
+            <div class="total--header">
+              <h4 class="text--heading-4">Доставка в пункт выдачи</h4>
+              <img src="./img/pen.svg" alt="pen" />
+            </div>
+            <div class="delivery__address--total">
+              <p class="text--tertiary">Бишкек, улица Ахматбека Суюмбаева, 12/1</p>
+              <p class="delivery__date"><span>5–8 фев</span></p>
+            </div>
+            <div class="delivery__footer">
+              <img src="./img/approved.svg" alt="approved" width="22px" height="22px" />
+              <p class="text--tertiary">
+                Обратная доставка товаров на склад при отказе — <br /><span>бесплатно</span>
+              </p>
+            </div>
+          </div>
+          <div class="total__card">
+            <div class="total--header">
+              <h4 class="text--heading-4">Оплата картой</h4>
+              <img src="./img/pen.svg" alt="pen" />
+            </div>
+            <div class="card__num">
+              <img src="./img/mir.svg" alt="mir" height="24px" width="32px" />
+              <p class="text--tertiary">1234 12•• •••• 1234</p>
+            </div>
+            <div class="card__footer">
+              <div class="footer__top">
+                <input type="checkbox" id="payment" />
+                <label for="payment"></label>
+                <p class="text--tertiary">Списать оплату сразу</p>
+              </div>
+              <div class="footer__bottom">
+                <p class="text--tertiary">Спишем оплату с карты при получении</p>
+              </div>
+            </div>
+          </div>
+          <button class="total__button">Заказать</button>
+          <div class="total__terms">
+					<img src="./img/check-mark.svg" alt="check-mark" width="13px" height="10px">
+						<p class="text--tertiary">Соглашаюсь <span>с правилами пользования торговой площадкой</span> и <span>возврата</span></p>
+					</div>
         </section>
       </main>
     </div>
-		<footer>
-			<p>© 2022  ООО «Товары и точка»</p>
-		</footer>
+    <footer>
+      <p>© 2022 ООО «Товары и точка»</p>
+    </footer>
   </body>
 </html>

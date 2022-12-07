@@ -56,6 +56,12 @@ input {
 	line-height: 3.2rem;
 }
 
+.text--heading-4 {
+	font-weight: 700;
+	font-size: 1.6rem;
+	line-height: 2.4rem;
+}
+
 .text--primary {
 	font-weight: 600;
 	font-size: 1.6rem;
@@ -65,6 +71,11 @@ input {
 .text--secondary {
 	font-size: 1.6rem;
 	line-height: 2.4rem;
+}
+
+.text--tertiary {
+	font-size: 1.3rem;
+	line-height: 1.6rem;
 }
 
 .text--gray {
@@ -350,6 +361,8 @@ input {
 /* CHECKBOX */
 [type="checkbox"] {
 	opacity: 0;
+	width: 22px;
+	height: 22px;
 }
 
 [type="checkbox"] + label {
@@ -563,12 +576,130 @@ input {
 
 /* TOTAL SECTION */
 .section__total {
+	width: 42.9rem;
+	height: 57.2rem;
+	border-radius: 16px;
+	padding: 16px 24px 24px 24px;
 }
-.placeholder {
-	width: 429px;
-	height: 572px;
-	background-color: black;
-	border-radius: 15px;
+
+.total__price {
+	margin-bottom: 24px;
+}
+
+.price__str {
+	display: flex;
+	justify-content: space-between;
+}
+
+.price__str:first-child {
+	margin-bottom: 8px;
+}
+
+.right-side {
+	text-align: end;
+}
+
+.total__delivery {
+}
+
+.total--header {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 6px;
+}
+
+.delivery__date {
+	margin-top: 4px;
+	font-size: 1.3rem;
+	line-height: 1.6rem;
+	color: #cb11ab;
+}
+
+.delivery__date span {
+	border-bottom: 1px dashed rgba(203, 17, 171, 0.2);
+}
+
+.delivery__footer {
+	display: flex;
+	align-items: center;
+	margin-top: 12px;
+	padding: 8px 8px 12px;
+	gap: 8px;
+	background-color: #f6f6fa;
+	border-radius: 8px;
+}
+
+.delivery__footer span {
+	color: #0cb477;
+	border-bottom: 1px dashed rgba(12, 180, 119, 0.2);
+}
+
+.total__card {
+	margin-top: 24px;
+}
+
+.card__num {
+	display: flex;
+	align-items: center;
+}
+
+.card__num img {
+	background-color: #f6f6fa;
+	border-radius: 4px;
+	padding: 0 1px;
+	margin-right: 8px;
+}
+
+.card__footer {
+	margin-top: 12px;
+	background-color: #f6f6fa;
+	border-radius: 8px;
+	padding: 8px 8px 12px;
+}
+
+.footer__top {
+	display: flex;
+	align-items: center;
+	margin-bottom: 8px;
+}
+
+.footer__top p {
+}
+
+.footer__top label {
+	top: 12px;
+	left: -8px;
+	margin-right: 5px;
+}
+
+.total__button {
+	border: none;
+	outline: none;
+	background: #cb11ab;
+	border-radius: 8px;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 24px;
+	color: #ffffff;
+	padding: 0px 32px 5px;
+	width: 381px;
+	height: 44px;
+	margin-top: 24px;
+	margin-bottom: 12px;
+}
+
+.total__terms {
+	display: flex;
+	align-items: start;
+}
+
+.total__terms img {
+	margin-top: 2px;
+	margin-right: 8px;
+}
+
+.total__terms span {
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 /* FOOTER */
