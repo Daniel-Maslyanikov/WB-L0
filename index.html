@@ -29,6 +29,7 @@
           </div>
           <div class="header__item">
             <img class="header__img-2" src="./img/Cart.svg" alt="Cart" />
+            <span class="item__amount">3</span>
             <p>Корзина</p>
           </div>
         </div>
@@ -50,20 +51,24 @@
             <div class="in-stock__products">
               <div class="product__item">
                 <div class="item__left">
-                  <input class="in-stock__checkbox" type="checkbox" id="t-shirt" />
-                  <label for="t-shirt"></label>
-                  <img class="item__pic" src="./img/t-shirt.png" alt="T-shirt" />
                   <div class="item__info">
-                    <p class="item__name">Футболка UZcotton мужская</p>
-                    <div class="item__param">
-                      <p>Цвет: белый</p>
-                      <p>Размер: 56</p>
-                    </div>
-                    <div class="item__address">
-                      <p class="text--gray">Коледино WB</p>
-                      <div class="item__comp">
-                        <p class="text--gray">ООО Вайлдберриз</p>
-                        <img src="./img/icon-i.svg" alt="i" />
+                    <div class="product__label">
+                      <input class="in-stock__checkbox" type="checkbox" id="t-shirt" />
+                      <label for="t-shirt"></label>
+                    </div class="">
+                    <img class="item__pic" src="./img/t-shirt.png" alt="T-shirt" />
+                    <div>
+                      <p class="item__name">Футболка UZcotton мужская</p>
+                      <div class="item__param">
+                        <p>Цвет: белый</p>
+                        <p>Размер: 56</p>
+                      </div>
+                      <div class="item__address">
+                        <p class="text--gray">Коледино WB</p>
+                        <div class="item__comp">
+                          <p class="text--gray">ООО Вайлдберриз</p>
+                          <img src="./img/icon-i.svg" alt="i" />
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -91,22 +96,26 @@
               </div>
               <div class="product__item">
                 <div class="item__left">
-                  <input class="in-stock__checkbox" type="checkbox" id="phone" />
-                  <label for="phone"></label>
-                  <img class="item__pic" src="./img/phone.png" alt="phone" />
                   <div class="item__info">
-                    <p class="item__name">
-                      Силиконовый чехол картхолдер (отверстия) для карт, прозрачный кейс бампер на
-                      Apple iPhone XR, MobiSafe
-                    </p>
-                    <div class="item__param">
-                      <p>Цвет: прозрачный</p>
+                    <div class="product__label">
+                      <input class="in-stock__checkbox" type="checkbox" id="phone" />
+                      <label for="phone"></label>
                     </div>
-                    <div class="item__address">
-                      <p class="text--gray">Коледино WB</p>
-                      <div class="item__comp">
-                        <p class="text--gray">ООО Мегапрофстиль</p>
-                        <img src="./img/icon-i.svg" alt="i" />
+                    <img class="item__pic" src="./img/phone.png" alt="phone" />
+                    <div>
+                      <p class="item__name">
+                        Силиконовый чехол картхолдер (отверстия) для карт, прозрачный кейс бампер на
+                        Apple iPhone XR, MobiSafe
+                      </p>
+                      <div class="item__param">
+                        <p>Цвет: прозрачный</p>
+                      </div>
+                      <div class="item__address">
+                        <p class="text--gray">Коледино WB</p>
+                        <div class="item__comp">
+                          <p class="text--gray">ООО Мегапрофстиль</p>
+                          <img src="./img/icon-i.svg" alt="i" />
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -133,20 +142,24 @@
               </div>
               <div class="product__item">
                 <div class="item__left">
-                  <input class="in-stock__checkbox" type="checkbox" id="pencils" />
-                  <label for="pencils"></label>
-                  <img class="item__pic" src="./img/pencils.png" alt="pencils" />
                   <div class="item__info">
-                    <p class="item__name">
-                      Карандаши цветные Faber-Castell "Замок", набор 24 цвета, заточенные,
-                      шестигранные,Faber-Castell
-                    </p>
+                    <div class="product__label">
+                      <input class="in-stock__checkbox" type="checkbox" id="pencils" />
+                      <label for="pencils"></label>
+                    </div>
+                    <img class="item__pic" src="./img/pencils.png" alt="pencils" />
+                    <div>
+                      <p class="item__name">
+                        Карандаши цветные Faber-Castell "Замок", набор 24 цвета, заточенные,
+                        шестигранные,Faber-Castell
+                      </p>
 
-                    <div class="item__address">
-                      <p class="text--gray">Коледино WB</p>
-                      <div class="item__comp">
-                        <p class="text--gray">ООО Вайлдберриз</p>
-                        <img src="./img/icon-i.svg" alt="i" />
+                      <div class="item__address">
+                        <p class="text--gray">Коледино WB</p>
+                        <div class="item__comp">
+                          <p class="text--gray">ООО Вайлдберриз</p>
+                          <img src="./img/icon-i.svg" alt="i" />
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -185,13 +198,13 @@
             </div>
             <div class="in-stock__products">
               <div class="product__item">
-                <div class="item__left">
+                <div class="item__left item__left--out-of-stock">
                   <img
                     class="item__pic item__pic--out-of-stock"
                     src="./img/t-shirt.png"
                     alt="T-shirt"
                   />
-                  <div class="item__info">
+                  <div class="item__info item__info--out-of-stock">
                     <p class="item__name item__name--out-of-stock">Футболка UZcotton мужская</p>
                     <div class="item__param item__param--out-of-stock">
                       <p>Цвет: белый</p>
@@ -212,13 +225,13 @@
                 </div>
               </div>
               <div class="product__item">
-                <div class="item__left">
+                <div class="item__left item__left--out-of-stock">
                   <img
                     class="item__pic item__pic--out-of-stock"
                     src="./img/phone.png"
                     alt="phone"
                   />
-                  <div class="item__info">
+                  <div class="item__info item__info--out-of-stock">
                     <p class="item__name item__name--out-of-stock">
                       Силиконовый чехол картхолдер (отверстия) для карт, прозрачный кейс бампер на
                       Apple iPhone XR, MobiSafe
@@ -241,13 +254,13 @@
                 </div>
               </div>
               <div class="product__item">
-                <div class="item__left">
+                <div class="item__left item__left--out-of-stock">
                   <img
                     class="item__pic item__pic--out-of-stock"
                     src="./img/pencils.png"
                     alt="pencils"
                   />
-                  <div class="item__info">
+                  <div class="item__info item__info--out-of-stock">
                     <p class="item__name item__name--out-of-stock">
                       Карандаши цветные Faber-Castell "Замок", набор 24 цвета, заточенные,
                       шестигранные,Faber-Castell
@@ -275,9 +288,9 @@
             </div>
             <div class="delivery__info">
               <div class="delivery__info--left">
-                <p class="text--primary">Пункт выдачи</p>
+                <p class="text--primary str--1">Пункт выдачи</p>
                 <p class="text--primary">Стоимость доставки</p>
-                <p class="text--primary">5—6 февраля</p>
+                <p class="text--primary str--3">5—6 февраля</p>
                 <p class="text--primary">7—8 февраля</p>
               </div>
               <div class="delivery__info--right">
@@ -293,12 +306,24 @@
                   <p class="text--secondary">Бесплатно</p>
                 </div>
                 <div class="delivery__dates">
-                  <img class="delivery__img" src="./img/t-shirt.png" alt="t-shirt" />
-                  <img class="delivery__img" src="./img/phone.png" alt="phone" />
-                  <img class="delivery__img" src="./img/pencils.png" alt="pencils" />
+                  <div class="delivery__item">
+                    <img class="delivery__img" src="./img/t-shirt.png" alt="t-shirt" />
+                    <span class="item__amount item__amount-delivery"></span>
+                  </div>
+                  <div class="delivery__item">
+                    <img class="delivery__img" src="./img/phone.png" alt="phone" />
+                    <span class="item__amount item__amount-delivery">184</span>
+                  </div>
+                  <div class="delivery__item">
+                    <img class="delivery__img" src="./img/pencils.png" alt="pencils" />
+                    <span class="item__amount item__amount-delivery">2</span>
+                  </div>
                 </div>
                 <div class="delivery__dates">
-                  <img class="delivery__img" src="./img/phone.png" alt="phone" />
+                  <div class="delivery__item">
+                    <img class="delivery__img" src="./img/phone.png" alt="phone" />
+                    <span class="item__amount item__amount-delivery">16</span>
+                  </div>
                 </div>
               </div>
             </div>
@@ -394,9 +419,13 @@
           </div>
           <button class="total__button">Заказать</button>
           <div class="total__terms">
-					<img src="./img/check-mark.svg" alt="check-mark" width="13px" height="10px">
-						<p class="text--tertiary">Соглашаюсь <span>с правилами пользования торговой площадкой</span> и <span>возврата</span></p>
-					</div>
+            <img src="./img/check-mark.svg" alt="check-mark" width="13px" height="10px" />
+            <p class="text--tertiary">
+              Соглашаюсь <span>с правилами пользования торговой площадкой</span> и <span
+                >возврата</span
+              >
+            </p>
+          </div>
         </section>
       </main>
     </div>
