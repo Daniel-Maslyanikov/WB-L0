@@ -83,12 +83,12 @@
                 <div class="item__right">
                   <div class="item__interaction">
                     <div class="item__counter">
-                      <button class="item__button">−</button>
-                      <div class="item__counter-display">1</div>
-                      <button class="item__button">+</button>
+                      <button class="item__button" data-action="minus">−</button>
+                      <div class="item__counter-display" data-display>1</div>
+                      <button class="item__button item__button--increase" data-action="plus">+</button>
                     </div>
                     <div class="interaction__bottom">
-                      <p>Осталось 2 шт.</p>
+                      <p>Осталось <span class="amount">2</span> шт.</p>
                       <div class="item__icons">
                         <img src="./img/favorite.svg" alt="favorite" />
                         <img src="./img/trash-can.svg" alt="delete" />
@@ -136,9 +136,10 @@
                 <div class="item__right">
                   <div class="item__interaction">
                     <div class="item__counter">
-                      <button class="item__button">−</button>
-                      <div class="item__counter-display">200</div>
-                      <button class="item__button">+</button>
+                      <button class="item__button" data-action="minus">−</button>
+                      <div class="item__counter-display" data-display>1</div>
+                      <button class="item__button item__button--increase" data-action="plus">+</button>
+											
                     </div>
                     <div class="interaction__bottom">
                       <div class="item__icons">
@@ -186,12 +187,12 @@
                 <div class="item__right">
                   <div class="item__interaction">
                     <div class="item__counter">
-                      <button class="item__button">−</button>
-                      <div class="item__counter-display">2</div>
-                      <button class="item__button">+</button>
+                      <button class="item__button" data-action="minus">−</button>
+                      <div class="item__counter-display" data-display>1</div>
+                      <button class="item__button item__button--increase" data-action="plus">+</button>
                     </div>
                     <div class="interaction__bottom">
-                      <p>Осталось 2 шт.</p>
+                      <p>Осталось <span class="amount">2</span> шт.</p>
                       <div class="item__icons">
                         <img src="./img/favorite.svg" alt="favorite" />
                         <img src="./img/trash-can.svg" alt="delete" />
@@ -500,5 +501,7 @@
     <footer>
       <p>© 2022 ООО «Товары и точка»</p>
     </footer>
+
+		<script src="main.js"></script>
   </body>
 </html>
