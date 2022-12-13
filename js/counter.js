@@ -1,13 +1,18 @@
-// DISPLAY COST
 window.addEventListener('click', function (event) {
   if (event.target.dataset.action === 'plus') {
     const counterItem = event.target.closest('.item__counter');
     const counter = counterItem.querySelector('[data-display]');
 		const amount = event.target.closest('.item__interaction').querySelector('.amount')
 		
-    if (parseInt(counter.innerText) < parseInt(amount.innerText)) {
-      counter.innerText = ++counter.innerText;
-    } 
+	
+    if (amount) {
+			if (parseInt(counter.innerText) < parseInt(amount.innerText)) {
+				counter.innerText = ++counter.innerText;
+			} 
+		} else {
+			counter.innerText = ++counter.innerText;
+		}
+		calcPrice()
   }
 
   if (event.target.dataset.action === 'minus') {
@@ -17,5 +22,6 @@ window.addEventListener('click', function (event) {
     if (parseInt(counter.innerText) > 1) {
       counter.innerText = --counter.innerText;
     }
+		calcPrice()
   }
 });

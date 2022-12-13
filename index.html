@@ -51,7 +51,7 @@
                 <img class="arrow-up" src="./img/arrow-up.svg" alt="arrow-up" />
               </div>
             </div>
-            <div class="in-stock__products">
+            <div class="in-stock__products" id="items">
               <div class="product__item">
                 <div class="item__left">
                   <div class="item__info">
@@ -74,13 +74,20 @@
                         <p class="text--gray">Коледино WB</p>
                         <div class="item__comp">
                           <p class="text--gray">ООО Вайлдберриз</p>
-                          <img src="./img/icon-i.svg" alt="i" />
+                          <div class="info">
+                          	<img src="./img/icon-i.svg" alt="i" />
+														<div class="info-popup">
+															<h3 class="heading--tertiary">ООО "Вайлдберриз"</h3>
+															<p class="text--tertiary">ОГРН: 5167746237148</p>
+															<p class="text--tertiary">129337, Москва, улица Красная Сосна, 2, корпус 1, стр. 1, помещение 2, офис 34</p>
+														</div>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="item__right">
+                <div class="item__right item__right--in-stock">
                   <div class="item__interaction">
                     <div class="item__counter">
                       <button class="item__button" data-action="minus">−</button>
@@ -90,14 +97,26 @@
                     <div class="interaction__bottom">
                       <p>Осталось <span class="amount">2</span> шт.</p>
                       <div class="item__icons">
-                        <img src="./img/favorite.svg" alt="favorite" />
-                        <img src="./img/trash-can.svg" alt="delete" />
+                        <img class="fav" src="./img/favorite.svg" alt="favorite" />
+                        <img class="trash-can" src="./img/trash-can.svg" alt="delete" />
                       </div>
                     </div>
                   </div>
                   <div class="item__price">
-                    <p class="price">522 <span>com</span></p>
-                    <p class="discount">1051 com</p>
+                    <p class="price"><span class="price-display">522</span> <span class="currency">com</span></p>
+										<div class="discount-popup">
+											<p class="discount"><span class="discount-price">1051</span> com</p>
+											<div class="discount-popup-content">
+												<div class="discount-popup-content--left">
+													<p class="text--gray">Скидка 55%</p>
+													<p class="text--gray">Скидка покупателя 10%</p>
+												</div>
+												<div class="discount-popup-content--right">
+													<p class="text--tertiary">−300 сом</p>
+													<p class="text--tertiary">−30 сом</p>
+												</div>
+											</div>
+										</div>
                   </div>
                 </div>
               </div>
@@ -133,7 +152,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="item__right">
+                <div class="item__right item__right--in-stock">
                   <div class="item__interaction">
                     <div class="item__counter">
                       <button class="item__button" data-action="minus">−</button>
@@ -143,14 +162,16 @@
                     </div>
                     <div class="interaction__bottom">
                       <div class="item__icons">
-                        <img src="./img/favorite.svg" alt="favorite" />
-                        <img src="./img/trash-can.svg" alt="delete" />
+                        <svg class="fav" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M3.03396 4.05857C2.26589 4.75224 1.76684 5.83284 1.99493 7.42928C2.22332 9.02783 3.26494 10.6852 4.80436 12.3478C6.25865 13.9184 8.10962 15.4437 9.99996 16.874C11.8903 15.4437 13.7413 13.9184 15.1956 12.3478C16.735 10.6852 17.7766 9.02783 18.005 7.4293C18.233 5.83285 17.734 4.75224 16.9659 4.05856C16.1766 3.34572 15.055 3 14 3C12.1319 3 11.0923 4.08479 10.5177 4.68443C10.4581 4.7466 10.4035 4.80356 10.3535 4.85355C10.1582 5.04882 9.84166 5.04882 9.6464 4.85355C9.59641 4.80356 9.54182 4.7466 9.48224 4.68443C8.90757 4.08479 7.86797 3 5.99995 3C4.94495 3 3.82325 3.34573 3.03396 4.05857ZM2.36371 3.31643C3.37369 2.40427 4.75202 2 5.99995 2C8.07123 2 9.34539 3.11257 9.99996 3.77862C10.6545 3.11257 11.9287 2 14 2C15.2479 2 16.6262 2.40428 17.6362 3.31644C18.6674 4.24776 19.2668 5.66715 18.9949 7.5707C18.7233 9.47217 17.5149 11.3148 15.9294 13.0272C14.3355 14.7486 12.3064 16.3952 10.3 17.9C10.1222 18.0333 9.87773 18.0333 9.69995 17.9C7.69353 16.3952 5.66443 14.7485 4.0706 13.0272C2.48503 11.3148 1.27665 9.47217 1.00498 7.57072C0.733012 5.66716 1.33249 4.24776 2.36371 3.31643Z"/>
+													</svg>
+                        <img class="trash-can" src="./img/trash-can.svg" alt="delete" />
                       </div>
                     </div>
                   </div>
                   <div class="item__price">
-                    <p class="price">2 100 047 <span>com</span></p>
-                    <p class="discount">2 300 047 com</p>
+                    <p class="price"><span class="price-display">10 500</span> <span>com</span></p>
+                    <p class="discount">15 500 com</p>
                   </div>
                 </div>
               </div>
@@ -184,7 +205,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="item__right">
+                <div class="item__right item__right--in-stock">
                   <div class="item__interaction">
                     <div class="item__counter">
                       <button class="item__button" data-action="minus">−</button>
@@ -194,13 +215,13 @@
                     <div class="interaction__bottom">
                       <p>Осталось <span class="amount">2</span> шт.</p>
                       <div class="item__icons">
-                        <img src="./img/favorite.svg" alt="favorite" />
-                        <img src="./img/trash-can.svg" alt="delete" />
+                        <img class="fav" src="./img/favorite.svg" alt="favorite" />
+                        <img class="trash-can" src="./img/trash-can.svg" alt="delete" />
                       </div>
                     </div>
                   </div>
                   <div class="item__price">
-                    <p class="price">494 <span>com</span></p>
+                    <p class="price"><span class="price-display">494</span> <span>com</span></p>
                     <p class="discount">950 com</p>
                   </div>
                 </div>
@@ -236,8 +257,14 @@
                   <div class="item__interaction">
                     <div class="interaction__bottom">
                       <div class="item__icons">
-                        <img src="./img/favorite.svg" alt="favorite" />
-                        <img src="./img/trash-can.svg" alt="delete" />
+                        <svg class="fav" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M3.03396 4.05857C2.26589 4.75224 1.76684 5.83284 1.99493 7.42928C2.22332 9.02783 3.26494 10.6852 4.80436 12.3478C6.25865 13.9184 8.10962 15.4437 9.99996 16.874C11.8903 15.4437 13.7413 13.9184 15.1956 12.3478C16.735 10.6852 17.7766 9.02783 18.005 7.4293C18.233 5.83285 17.734 4.75224 16.9659 4.05856C16.1766 3.34572 15.055 3 14 3C12.1319 3 11.0923 4.08479 10.5177 4.68443C10.4581 4.7466 10.4035 4.80356 10.3535 4.85355C10.1582 5.04882 9.84166 5.04882 9.6464 4.85355C9.59641 4.80356 9.54182 4.7466 9.48224 4.68443C8.90757 4.08479 7.86797 3 5.99995 3C4.94495 3 3.82325 3.34573 3.03396 4.05857ZM2.36371 3.31643C3.37369 2.40427 4.75202 2 5.99995 2C8.07123 2 9.34539 3.11257 9.99996 3.77862C10.6545 3.11257 11.9287 2 14 2C15.2479 2 16.6262 2.40428 17.6362 3.31644C18.6674 4.24776 19.2668 5.66715 18.9949 7.5707C18.7233 9.47217 17.5149 11.3148 15.9294 13.0272C14.3355 14.7486 12.3064 16.3952 10.3 17.9C10.1222 18.0333 9.87773 18.0333 9.69995 17.9C7.69353 16.3952 5.66443 14.7485 4.0706 13.0272C2.48503 11.3148 1.27665 9.47217 1.00498 7.57072C0.733012 5.66716 1.33249 4.24776 2.36371 3.31643Z"/>
+													</svg>
+                        <svg class="trash-can" width="20" height="20" viewBox="0 0 20 20"  xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M2.5 5C2.5 4.72386 2.72386 4.5 3 4.5H17C17.2761 4.5 17.5 4.72386 17.5 5C17.5 5.27614 17.2761 5.5 17 5.5H3C2.72386 5.5 2.5 5.27614 2.5 5Z" />
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M3.4584 4.5H16.5059L15.6411 15.6926C15.5405 16.9947 14.4546 18 13.1486 18H6.84639C5.54299 18 4.45829 16.9986 4.35435 15.6994L3.4584 4.5ZM4.5416 5.5L5.35117 15.6196C5.41353 16.3992 6.06435 17 6.84639 17H13.1486C13.9322 17 14.5837 16.3968 14.6441 15.6155L15.4256 5.5H4.5416Z"/>
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M13 5.5H7V3.46875C7 2.65758 7.65758 2 8.46875 2H11.5312C12.3424 2 13 2.65758 13 3.46875V5.5ZM8.46875 3C8.20987 3 8 3.20987 8 3.46875V4.5H12V3.46875C12 3.20987 11.7901 3 11.5312 3H8.46875Z"/>
+													</svg>
                       </div>
                     </div>
                   </div>
@@ -265,8 +292,14 @@
                   <div class="item__interaction">
                     <div class="interaction__bottom">
                       <div class="item__icons">
-                        <img src="./img/favorite.svg" alt="favorite" />
-                        <img src="./img/trash-can.svg" alt="delete" />
+                        <svg class="fav" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M3.03396 4.05857C2.26589 4.75224 1.76684 5.83284 1.99493 7.42928C2.22332 9.02783 3.26494 10.6852 4.80436 12.3478C6.25865 13.9184 8.10962 15.4437 9.99996 16.874C11.8903 15.4437 13.7413 13.9184 15.1956 12.3478C16.735 10.6852 17.7766 9.02783 18.005 7.4293C18.233 5.83285 17.734 4.75224 16.9659 4.05856C16.1766 3.34572 15.055 3 14 3C12.1319 3 11.0923 4.08479 10.5177 4.68443C10.4581 4.7466 10.4035 4.80356 10.3535 4.85355C10.1582 5.04882 9.84166 5.04882 9.6464 4.85355C9.59641 4.80356 9.54182 4.7466 9.48224 4.68443C8.90757 4.08479 7.86797 3 5.99995 3C4.94495 3 3.82325 3.34573 3.03396 4.05857ZM2.36371 3.31643C3.37369 2.40427 4.75202 2 5.99995 2C8.07123 2 9.34539 3.11257 9.99996 3.77862C10.6545 3.11257 11.9287 2 14 2C15.2479 2 16.6262 2.40428 17.6362 3.31644C18.6674 4.24776 19.2668 5.66715 18.9949 7.5707C18.7233 9.47217 17.5149 11.3148 15.9294 13.0272C14.3355 14.7486 12.3064 16.3952 10.3 17.9C10.1222 18.0333 9.87773 18.0333 9.69995 17.9C7.69353 16.3952 5.66443 14.7485 4.0706 13.0272C2.48503 11.3148 1.27665 9.47217 1.00498 7.57072C0.733012 5.66716 1.33249 4.24776 2.36371 3.31643Z"/>
+													</svg>
+                        <svg class="trash-can" width="20" height="20" viewBox="0 0 20 20"  xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M2.5 5C2.5 4.72386 2.72386 4.5 3 4.5H17C17.2761 4.5 17.5 4.72386 17.5 5C17.5 5.27614 17.2761 5.5 17 5.5H3C2.72386 5.5 2.5 5.27614 2.5 5Z" />
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M3.4584 4.5H16.5059L15.6411 15.6926C15.5405 16.9947 14.4546 18 13.1486 18H6.84639C5.54299 18 4.45829 16.9986 4.35435 15.6994L3.4584 4.5ZM4.5416 5.5L5.35117 15.6196C5.41353 16.3992 6.06435 17 6.84639 17H13.1486C13.9322 17 14.5837 16.3968 14.6441 15.6155L15.4256 5.5H4.5416Z"/>
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M13 5.5H7V3.46875C7 2.65758 7.65758 2 8.46875 2H11.5312C12.3424 2 13 2.65758 13 3.46875V5.5ZM8.46875 3C8.20987 3 8 3.20987 8 3.46875V4.5H12V3.46875C12 3.20987 11.7901 3 11.5312 3H8.46875Z"/>
+													</svg>
                       </div>
                     </div>
                   </div>
@@ -291,8 +324,14 @@
                   <div class="item__interaction">
                     <div class="interaction__bottom">
                       <div class="item__icons">
-                        <img src="./img/favorite.svg" alt="favorite" />
-                        <img src="./img/trash-can.svg" alt="delete" />
+                        <svg class="fav" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M3.03396 4.05857C2.26589 4.75224 1.76684 5.83284 1.99493 7.42928C2.22332 9.02783 3.26494 10.6852 4.80436 12.3478C6.25865 13.9184 8.10962 15.4437 9.99996 16.874C11.8903 15.4437 13.7413 13.9184 15.1956 12.3478C16.735 10.6852 17.7766 9.02783 18.005 7.4293C18.233 5.83285 17.734 4.75224 16.9659 4.05856C16.1766 3.34572 15.055 3 14 3C12.1319 3 11.0923 4.08479 10.5177 4.68443C10.4581 4.7466 10.4035 4.80356 10.3535 4.85355C10.1582 5.04882 9.84166 5.04882 9.6464 4.85355C9.59641 4.80356 9.54182 4.7466 9.48224 4.68443C8.90757 4.08479 7.86797 3 5.99995 3C4.94495 3 3.82325 3.34573 3.03396 4.05857ZM2.36371 3.31643C3.37369 2.40427 4.75202 2 5.99995 2C8.07123 2 9.34539 3.11257 9.99996 3.77862C10.6545 3.11257 11.9287 2 14 2C15.2479 2 16.6262 2.40428 17.6362 3.31644C18.6674 4.24776 19.2668 5.66715 18.9949 7.5707C18.7233 9.47217 17.5149 11.3148 15.9294 13.0272C14.3355 14.7486 12.3064 16.3952 10.3 17.9C10.1222 18.0333 9.87773 18.0333 9.69995 17.9C7.69353 16.3952 5.66443 14.7485 4.0706 13.0272C2.48503 11.3148 1.27665 9.47217 1.00498 7.57072C0.733012 5.66716 1.33249 4.24776 2.36371 3.31643Z"/>
+													</svg>
+                        <svg class="trash-can" width="20" height="20" viewBox="0 0 20 20"  xmlns="http://www.w3.org/2000/svg">
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M2.5 5C2.5 4.72386 2.72386 4.5 3 4.5H17C17.2761 4.5 17.5 4.72386 17.5 5C17.5 5.27614 17.2761 5.5 17 5.5H3C2.72386 5.5 2.5 5.27614 2.5 5Z" />
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M3.4584 4.5H16.5059L15.6411 15.6926C15.5405 16.9947 14.4546 18 13.1486 18H6.84639C5.54299 18 4.45829 16.9986 4.35435 15.6994L3.4584 4.5ZM4.5416 5.5L5.35117 15.6196C5.41353 16.3992 6.06435 17 6.84639 17H13.1486C13.9322 17 14.5837 16.3968 14.6441 15.6155L15.4256 5.5H4.5416Z"/>
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M13 5.5H7V3.46875C7 2.65758 7.65758 2 8.46875 2H11.5312C12.3424 2 13 2.65758 13 3.46875V5.5ZM8.46875 3C8.20987 3 8 3.20987 8 3.46875V4.5H12V3.46875C12 3.20987 11.7901 3 11.5312 3H8.46875Z"/>
+													</svg>
                       </div>
                     </div>
                   </div>
@@ -349,7 +388,12 @@
             </div>
             <div class="delivery__returns">
               <img src="./img/approved.svg" alt="approved" />
-              <p>Обратная доставка товаров на склад при отказе — <span>бесплатно</span></p>
+							<div class="popup-free--mobile">
+								<p class="text--tertiary">
+									Обратная доставка товаров на склад при отказе — <span>бесплатно</span>
+								</p>
+								<p class="text--tertiary popup-free--mobile-content">Если товары вам не подойдут, мы вернем их обратно на склад — это бесплатно</p>
+							</div>
             </div>
           </section>
           <section class="section__payments wrapper--white">
@@ -364,7 +408,7 @@
             </div>
             <p class="text--gray">Спишем оплату с карты при получении</p>
           </section>
-          <section class="section__recipient wrapper--white">
+          <form  id="recipient" class="section__recipient wrapper--white">
             <h3 class="recipient__heading text--heading">Получатель</h3>
             <div class="recipient__input-wrapper">
               <div class="recipient__top">
@@ -372,28 +416,28 @@
                 <input class="recipient__input" type="text" placeholder="Фамилия" />
               </div>
               <div class="recipient__bottom">
-                <input class="recipient__input" type="text" placeholder="Почта" />
-                <input class="recipient__input" type="text" placeholder="Телефон" />
-                <div class="recipient__input--inn">
-                  <input class="recipient__input" type="text" placeholder="ИНН" />
+                <input class="recipient__input recipient__input-email" type="text" placeholder="Почта" />
+                <input class="recipient__input recipient__input-tel" type="tel" placeholder="Телефон" data-phone-pattern/>
+                <div class="recipient__bottom--inn">
+                  <input class="recipient__input recipient__input-inn" type="text" placeholder="ИНН" />
                   <p>Для таможенного оформления</p>
                 </div>
               </div>
             </div>
-          </section>
+          </form>
 					<section class="section__total--mobile">
-						<div class="total__price">
+						<div class="total__price--wrapper">
 							<div class="price__str">
 								<h3 class="text--heading">Итого</h3>
-								<h3 class="text--heading right-side">2 101 063 сом</h3>
+								<h3 class="text--heading right-side"><span class="total-price--mobile">0</span>  сом</h3>
 							</div>
 							<div class="price__str">
 								<p class="text--secondary">4 товара</p>
-								<p class="text--secondary right-side">2 302 048 сом</p>
+								<p class="text--secondary right-side">0 сом</p>
 							</div>
 							<div class="price__str">
 								<p class="text--secondary">Скидка</p>
-								<p class="text--secondary right-side">-200 985 сом</p>
+								<p class="text--secondary right-side">0 сом</p>
 							</div>
 							<div class="price__str">
 								<p class="text--secondary">Доставка</p>
@@ -403,9 +447,12 @@
 						<div class="total__delivery">
 							<div class="delivery__footer delivery__footer--mobile">
 								<img src="./img/approved.svg" alt="approved" width="22px" height="22px" />
-								<p class="text--tertiary">
-									Обратная доставка товаров на склад при отказе — <span>бесплатно</span>
-								</p>
+								<div class="popup-free--mobile">
+									<p class="text--tertiary">
+										Обратная доставка товаров на склад при отказе — <span>бесплатно</span>
+									</p>
+									<p class="text--tertiary popup-free--mobile-content">Если товары вам не подойдут, мы вернем их обратно на склад — это бесплатно</p>
+								</div>
 							</div>
 						</div>
 						<div class="total__card">
@@ -420,7 +467,7 @@
 								</div>
 							</div>
 						</div>
-						<button class="total__button">Заказать</button>
+						<button class="total__button" type="submit" form="recipient">Заказать</button>
 						<div class="total__terms total__terms--mobile">
 							<img src="./img/check-mark.svg" alt="check-mark" width="13px" height="10px" />
 							<p class="text--tertiary">
@@ -435,15 +482,15 @@
           <div class="total__price">
             <div class="price__str">
               <h3 class="text--heading">Итого</h3>
-              <h3 class="text--heading right-side">2 101 063 сом</h3>
+              <h3 class="text--heading right-side">0 сом</h3>
             </div>
             <div class="price__str">
               <p class="text--secondary">4 товара</p>
-              <p class="text--secondary right-side">2 302 048 сом</p>
+              <p class="text--secondary right-side"><span class="total-price">0 </span><span>сом</span></p>
             </div>
             <div class="price__str">
               <p class="text--secondary">Скидка</p>
-              <p class="text--secondary right-side">-200 985 сом</p>
+              <p class="text--secondary right-side">0 сом</p>
             </div>
             <div class="price__str">
               <p class="text--secondary">Доставка</p>
@@ -461,9 +508,12 @@
             </div>
             <div class="delivery__footer">
               <img src="./img/approved.svg" alt="approved" width="22px" height="22px" />
-              <p class="text--tertiary">
-                Обратная доставка товаров на склад при отказе — <br /><span>бесплатно</span>
-              </p>
+              <div class="popup-free">
+									<p class="text--tertiary">
+										Обратная доставка товаров на склад при отказе — <span class="popup-free--show">бесплатно</span>
+									</p>
+									<p class="text--tertiary popup-free-content">Если товары вам не подойдут, мы вернем их обратно на склад — это бесплатно</p>
+								</div>
             </div>
           </div>
           <div class="total__card">
@@ -486,7 +536,7 @@
               </div>
             </div>
           </div>
-          <button class="total__button">Заказать</button>
+          <button class="total__button" type="submit" form="recipient">Заказать</button>
           <div class="total__terms">
             <img src="./img/check-mark.svg" alt="check-mark" width="13px" height="10px" />
             <p class="text--tertiary">
@@ -501,7 +551,10 @@
     <footer>
       <p>© 2022 ООО «Товары и точка»</p>
     </footer>
-
-		<script src="main.js"></script>
+		<script src="./js/phoneMask.js"></script>
+		<script src="./js/validation.js"></script>
+		<script src="./js/productsRender.js"></script>
+		<script src="./js/counter.js"></script>
+		<script src="./js/calcPrice.js"></script>
   </body>
 </html>
