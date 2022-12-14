@@ -177,7 +177,7 @@ function incrementCounter(index, key) {
   viewCounter(key, products[index]);
 	viewPrice(key, products[index]);
 	viewDiscount(key, products[index]);
-	calcPrice();
+	// calcPrice();
 }
 
 function decrementCounter(index, key) {
@@ -186,7 +186,7 @@ function decrementCounter(index, key) {
   viewCounter(key, products[index]);
 	viewPrice(key, products[index]);
 	viewDiscount(key, products[index]);
-	calcPrice();
+	// calcPrice();
 }
 
 function amountRender(obj, amount) {

@@ -134,6 +134,10 @@ input {
 	line-height: 1.6rem;
 }
 
+.header__item:hover {
+	cursor: pointer;
+}
+
 .header__search {
 	position: relative;
 	border-radius: 36px;
@@ -373,10 +377,12 @@ input {
 
 .fav:hover {
 	fill: #CB11AB;
+	transition: all 0.4s;
 }
 
 .trash-can:hover {
 	fill: #F55123;
+	transition: all 0.4s;
 }
 
 .item__price {
@@ -832,6 +838,10 @@ input {
 	margin-bottom: 0.6rem;
 }
 
+.total--header img:hover {
+	cursor: pointer;
+}
+
 .delivery__date {
 	margin-top: 0.4rem;
 	font-size: 1.3rem;
@@ -915,6 +925,14 @@ input {
 	margin-top: 2.4rem;
 	margin-bottom: 1.2rem;
 	cursor: pointer;
+	transition: all .2s;
+}
+
+.total__button:hover {
+	transform: translateY(-2px);
+}
+.total__button:active {
+	transform: translateY(0px);
 }
 
 
@@ -1258,9 +1276,13 @@ footer p {
 		width: 270px;
 	}
 
+	.recipient__input {
+		margin-bottom: 18px;
+	}
+
 	.recipient__top {
 		flex-direction: column;
-		
+		margin-bottom: 0;
 	}
 
 	.recipient__top input {
@@ -1271,6 +1293,9 @@ footer p {
 		flex-direction: column;
 		
 	}
+	.recipient__input-inn{
+		margin-bottom: 0;
+	}
 
 	.recipient__bottom input {
 		width: 100%;
@@ -1278,5 +1303,12 @@ footer p {
 
 	.recipient__input {
 		
+	}
+	.content {
+		width: 100%;
+	}
+
+	.header__center {
+		margin-left: 25px;
 	}
 }
