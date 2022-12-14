@@ -11,7 +11,7 @@ function validateEmail(email) {
 }
 
 function validatePhone(phone) {
-  let re = /^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s\./0-9]*$/g;
+  let re = /^(\+{0,})(\d{0,})([(]{1}\d{1,3}[)]{0,}){0,}(\s?\d+|\+\d{2,3}\s{1}\d+|\d+){1}[\s|-]?\d+([\s|-]?\d+){1,2}(\s){0,}$/gm
   return re.test(String(phone));
 }
 
@@ -54,5 +54,15 @@ inputEmail.addEventListener('change', (e) => {
     return false;
   } else {
     inputEmail.classList.remove('recipient__input--err');
+  }
+});
+
+inputPhone.addEventListener('change', (e) => {
+	let phoneVal = inputPhone.value
+  if (!validatePhone(phoneVal)) {
+    inputPhone.classList.add('recipient__input--err');
+    return false;
+  } else {
+    inputPhone.classList.remove('recipient__input--err');
   }
 });
