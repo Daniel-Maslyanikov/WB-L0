@@ -508,6 +508,10 @@ input {
 	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15), 0px 0px 1px rgba(0, 0, 0, 0.3);
 }
 
+.popup-free--mobile {
+	cursor: pointer;
+}
+
 .popup-free--mobile:hover .popup-free--mobile-content {
   visibility: visible;
 }
@@ -762,6 +766,13 @@ input {
 .recipient__input--err {
 	color: #F55123;
 	border-bottom: 1px solid #F55123;
+}
+
+.err-message {
+	position: absolute;
+	font-size: 1.2rem;
+	line-height: 1.4rem;
+	color: #F55123;
 }
 
 .recipient__input::placeholder {

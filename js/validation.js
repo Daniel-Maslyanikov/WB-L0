@@ -11,7 +11,7 @@ function validateEmail(email) {
 }
 
 function validatePhone(phone) {
-  let re = /^[0-9\s]*$/;
+  let re = /^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s\./0-9]*$/g;
   return re.test(String(phone));
 }
 
@@ -23,30 +23,36 @@ form.onsubmit = function () {
   formInputs.forEach(function (input) {
     if (input.value === '') {
       input.classList.add('recipient__input--err');
-      console.log('input not filled');
     } else {
       input.classList.remove('recipient__input--err');
     }
   });
 
   if (emptyInputs.length !== 0) {
-    console.log('inputs not filled');
     return false;
   }
 
   if (!validateEmail(emailVal)) {
-    console.log('email not valid');
     inputEmail.classList.add('recipient__input--err');
     return false;
   } else {
     inputEmail.classList.remove('recipient__input--err');
   }
 
-	if (!validatePhone(phoneVal)) {
-    console.log('phone not valid');
+  if (!validatePhone(phoneVal)) {
     inputPhone.classList.add('recipient__input--err');
     return false;
   } else {
     inputPhone.classList.remove('recipient__input--err');
   }
 };
+
+inputEmail.addEventListener('change', (e) => {
+	let emailVal = inputEmail.value
+  if (!validateEmail(emailVal)) {
+    inputEmail.classList.add('recipient__input--err');
+    return false;
+  } else {
+    inputEmail.classList.remove('recipient__input--err');
+  }
+});
