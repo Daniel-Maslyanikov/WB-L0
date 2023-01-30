@@ -43,7 +43,7 @@
           <section class="section__in-stock">
             <div class="section__in-stock--header">
               <div class="in-stock__all">
-                <input class="in-stock__checkbox" type="checkbox" id="all" />
+                <input class="in-stock__checkbox" type="checkbox" id="all" onChange="changeAllCheckboxHandler()"/>
                 <label for="all"></label>
                 <p>Выбрать все</p>
               </div>
@@ -169,7 +169,7 @@
           <section class="section__delivery wrapper--white">
             <div class="section__header">
               <h3 class="text--heading">Способ доставки</h3>
-              <a class="text--change">Изменить</a>
+              <a class="text--change popup--delivery">Изменить</a>
             </div>
             <div class="delivery__info">
               <div class="delivery__info--left">
@@ -225,8 +225,39 @@
           <section class="section__payments wrapper--white">
             <div class="section__header">
               <h3 class="text--heading">Способ оплаты</h3>
-              <a class="text--change">Изменить</a>
+              <a class="text--change payments--popup" data-modal="modal-payments">Изменить</a>
             </div>
+						<div class="payments__modal" id="modal-payments">
+							<div class="modal__header">
+								<h3>Способ оплаты</h3>
+								<span class="payments--close modal-exit">&times;</span>
+							</div>
+							<div class="modal__content">
+								<label>
+									<input type="radio">
+									<img src="./img/mir.svg" alt="">
+									1234 56•• •••• 1234
+								</label>
+								<label>
+									<input type="radio">
+									<img src="./img/mir.svg" alt="">
+									1234 56•• •••• 1234
+								</label>
+								<label>
+									<input type="radio">
+									<img src="./img/mir.svg" alt="">
+									1234 56•• •••• 1234
+								</label>
+								<label>
+									<input type="radio">
+									<img src="./img/mir.svg" alt="">
+									1234 56•• •••• 1234
+								</label>
+							</div>
+							<div class="modal__footer">
+								<button class="modal__button">Выбрать</button>
+							</div>
+						</div>
             <div class="payments__card">
               <img src="./img/mir.svg" alt="mir" />
               <p class="text--secondary">1234 56•• •••• 1234</p>
@@ -234,6 +265,7 @@
             </div>
             <p class="text--gray">Спишем оплату с карты при получении</p>
           </section>
+					
           <form  id="recipient" class="section__recipient wrapper--white">
             <h3 class="recipient__heading text--heading">Получатель</h3>
             <div class="recipient__input-wrapper">
@@ -255,15 +287,15 @@
 						<div class="total__price--wrapper">
 							<div class="price__str">
 								<h3 class="text--heading">Итого</h3>
-								<h3 class="text--heading right-side"><span class="total-price--mobile">0</span>  сом</h3>
+								<h3 class="text--heading right-side"><span data-total-price class="total-price--mobile">0</span>  сом</h3>
 							</div>
 							<div class="price__str">
 								<p class="text--secondary">4 товара</p>
-								<p class="text--secondary right-side">0 сом</p>
+								<p class="text--secondary right-side" data-total-full-price>0</p><span>сом</span>
 							</div>
 							<div class="price__str">
 								<p class="text--secondary">Скидка</p>
-								<p class="text--secondary right-side">0 сом</p>
+								<p class="text--secondary right-side" data-total-sale-price>0 сом</p>
 							</div>
 							<div class="price__str">
 								<p class="text--secondary">Доставка</p>
@@ -308,15 +340,15 @@
           <div class="total__price">
             <div class="price__str">
               <h3 class="text--heading">Итого</h3>
-              <h3 class="text--heading right-side">0 сом</h3>
+              <h3 class="text--heading right-side" data-total-price>0 <span>сом</span></h3>
             </div>
             <div class="price__str">
               <p class="text--secondary">4 товара</p>
-              <p class="text--secondary right-side"><span class="total-price">0 </span><span>сом</span></p>
+              <p class="text--secondary right-side"><span class="total-price" data-total-full-price>0 </span><span>сом</span></p>
             </div>
             <div class="price__str">
               <p class="text--secondary">Скидка</p>
-              <p class="text--secondary right-side">0 сом</p>
+              <p class="text--secondary right-side" data-total-sale-price>0 <span>сом</span></p>
             </div>
             <div class="price__str">
               <p class="text--secondary">Доставка</p>
@@ -345,7 +377,7 @@
           <div class="total__card">
             <div class="total--header">
               <h4 class="text--heading-4">Оплата картой</h4>
-              <img src="./img/pen.svg" alt="pen" />
+              <img src="./img/pen.svg" alt="pen" data-modal="modal-payments"/>
             </div>
             <div class="card__num">
               <img src="./img/mir.svg" alt="mir" height="24px" width="32px" />
@@ -379,7 +411,6 @@
     </footer>
 		<script src="./js/validation.js"></script>
 		<script src="./js/productsRender.js"></script>
-		<script src="./js/counter.js"></script>
-		<script src="./js/calcPrice.js"></script>
+		<script src="./js/paymentsPopup.js"></script>
   </body>
 </html>
