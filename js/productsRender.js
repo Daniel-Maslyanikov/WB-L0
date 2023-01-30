@@ -202,6 +202,8 @@ function changeAllCheckboxHandler() {
       item.checkboxValue = true;
       checkboxObj.checked = true
       price.total += item.totalPrice
+			price.full += item.totalDiscount
+			price.sale += item.totalDiscount - item.totalPrice
 
     }
 
@@ -209,6 +211,8 @@ function changeAllCheckboxHandler() {
       item.checkboxValue = false;
       checkboxObj.checked = false
       price.total -= item.totalPrice
+			price.full -= item.totalDiscount
+			price.sale -= item.totalDiscount - item.totalPrice
     
     }
     
@@ -222,6 +226,8 @@ function incrementCounter(index, key) {
 
     if (products[index].checkboxValue) {
       price.total += products[index].price
+			price.full += products[index].discount
+			price.sale += products[index].discount - products[index].price
     }
   }
 
@@ -241,10 +247,13 @@ function decrementCounter(index, key) {
 
   if (products[index].checkboxValue) {
     price.total -= products[index].price
+		price.full -= products[index].discount
+		price.sale -= products[index].discount - products[index].price
   }
 
   products[index].totalPrice -= products[index].price;
   products[index].totalDiscount -= products[index].discount;
+	
 
   viewTotalPrice();
   viewCounter(key);
@@ -288,12 +297,16 @@ function checkbkoxHandler(itemId) {
       if (item.checkboxValue) {
         checkboxObj.checked = true
         price.total += item.totalPrice
+				price.full += item.totalDiscount
+				price.sale += item.totalDiscount - item.totalPrice
         
         checkIsAll = checkIsAllObj.checked = checkAllCheckboxes()
       } else {
         checkboxObj.checked = false
         price.total -= item.totalPrice
-        
+        price.full -= item.totalDiscount
+				price.sale -= item.totalDiscount - item.totalPrice
+
         checkIsAll = checkIsAllObj.checked = false
       }
       
