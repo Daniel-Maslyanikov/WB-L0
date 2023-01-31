@@ -40,17 +40,17 @@
       <main class="content">
         <section class="section__cart">
           <h2 class="heading-2">Корзина</h2>
-          <section class="section__in-stock">
-            <div class="section__in-stock--header">
-              <div class="in-stock__all">
-                <input class="in-stock__checkbox" type="checkbox" id="all" onChange="changeAllCheckboxHandler()"/>
-                <label for="all"></label>
-                <p>Выбрать все</p>
-              </div>
-              <div>
-                <img class="arrow-up" src="./img/arrow-up.svg" alt="arrow-up" />
-              </div>
-            </div>
+					<div class="section__in-stock--header">
+						<div class="in-stock__all">
+							<input class="in-stock__checkbox" type="checkbox" id="all" onChange="changeAllCheckboxHandler()"/>
+							<label for="all"></label>
+							<p>Выбрать все</p>
+						</div>
+						<div>
+							<img class="arrow-up" src="./img/arrow-up.svg" alt="arrow-up" id="hider-in-stock"/>
+						</div>
+					</div>
+          <section class="section__in-stock" id="in-stock">
             <div class="in-stock__products" id="items">
             </div>
           </section>
@@ -59,10 +59,10 @@
 							<p class="text__out-of-stock">Отсутствуют · 3 товара</p>
 						</div>
 						<div>
-							<img class="arrow-up" src="./img/arrow-up.svg" alt="arrow-up" id="hider" />
+							<img class="arrow-up" src="./img/arrow-up.svg" alt="arrow-up" id="hider-out-of-stock" />
 						</div>
 					</div>
-          <section class="section__in-stock section__out-of-stock" id="section">
+          <section class="section__in-stock section__out-of-stock" id="out-of-stock">
             
             <div class="in-stock__products">
               <div class="product__item">
