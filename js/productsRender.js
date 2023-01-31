@@ -327,7 +327,7 @@ function viewTotalPrice() {
     item.textContent = price.full;
   });
   totalSalePriceObj.forEach((item) => {
-    item.textContent = price.sale;
+    item.textContent = `-${price.sale}`;
   });
 }
 

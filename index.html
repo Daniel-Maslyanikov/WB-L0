@@ -54,15 +54,16 @@
             <div class="in-stock__products" id="items">
             </div>
           </section>
-          <section class="section__in-stock section__out-of-stock">
-            <div class="section__in-stock--header">
-              <div class="in-stock__all">
-                <p class="text__out-of-stock">Отсутствуют · 3 товара</p>
-              </div>
-              <div>
-                <img class="arrow-up" src="./img/arrow-up.svg" alt="arrow-up" />
-              </div>
-            </div>
+					<div class="section__in-stock--header">
+						<div class="in-stock__all">
+							<p class="text__out-of-stock">Отсутствуют · 3 товара</p>
+						</div>
+						<div>
+							<img class="arrow-up" src="./img/arrow-up.svg" alt="arrow-up" id="hider" />
+						</div>
+					</div>
+          <section class="section__in-stock section__out-of-stock" id="section">
+            
             <div class="in-stock__products">
               <div class="product__item">
                 <div class="item__left item__left--out-of-stock">
@@ -412,5 +413,6 @@
 		<script src="./js/validation.js"></script>
 		<script src="./js/productsRender.js"></script>
 		<script src="./js/paymentsPopup.js"></script>
+		<script src="./js/elementsHider.js"></script>
   </body>
 </html>
