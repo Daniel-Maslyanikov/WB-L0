@@ -195,11 +195,11 @@ function changeAllCheckboxHandler() {
     const checkboxObj = document.querySelector(`[data-product-set="${item.id}"]`)
     
     if (item.checkboxValue && checkIsAll) {
-      // !ниче не делаем
+      // !ничего не делаем
     }
     
     if (!item.checkboxValue && checkIsAll) {
-      item.checkboxValue = true;
+      item.checkboxValue = true
       checkboxObj.checked = true
       price.total += item.totalPrice
 			price.full += item.totalDiscount
@@ -330,6 +330,8 @@ function viewTotalPrice() {
     item.textContent = `-${price.sale}`;
   });
 }
+
+
 
 window.addEventListener('DOMContentLoaded', () => {
   products.forEach((elem, index) => {
