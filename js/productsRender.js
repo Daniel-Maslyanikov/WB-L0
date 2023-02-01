@@ -143,9 +143,9 @@ function renderItem(products, index) {
 			<div class="item__price">
 				<p class="price"><span class="price-display">${
           products.price * products.currentAmount
-        }</span> <span class="currency">com</span></p>
+        }</span> <span class="currency">сом</span></p>
 				<div class="discount-popup">
-				<p class="discount"><span class="discount-price">${products.discount}</span> com</p>
+				<p class="discount"><span class="discount-price">${products.discount}</span> сом</p>
 				<div class="discount-popup-content">
 					<div class="discount-popup-content--left">
 						<p class="text--gray">Скидка 55%</p>

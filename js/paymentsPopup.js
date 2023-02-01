@@ -6,7 +6,6 @@ modals.forEach(function (trigger) {
     const modal = document.getElementById(trigger.dataset.modal);
     modal.classList.add("open");
     const exits = modal.querySelectorAll(".payments--close");
-		console.log(exits);
     exits.forEach(function (exit) {
       exit.addEventListener("click", function (event) {
         event.preventDefault();
